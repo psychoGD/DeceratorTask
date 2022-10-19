@@ -10,7 +10,7 @@ namespace DecoratorTask.Entities
     {
         public Item GetNotification()
         {
-            return null;
+            return new Item();
         }
     }
 }

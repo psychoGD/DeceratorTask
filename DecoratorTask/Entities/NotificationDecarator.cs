@@ -19,6 +19,6 @@ namespace DecoratorTask.Entities
         {
             return notification.GetNotification();
         }
-
+        
     }
 }

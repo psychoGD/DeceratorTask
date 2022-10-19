@@ -18,8 +18,13 @@ namespace DecoratorTask.Entities
             Message = message;
             ImagePath = imagePath;
         }
+        
         public string Message { get; set; }
         public string ImagePath { get; set; }
+        public override string ToString()
+        {
+            return Message;
+        }
     }
 
 }

@@ -29,7 +29,7 @@ namespace DecoratorTask
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             INotification notification = new Notification();
-            NotificationDecarator notificationDecarator = new NotificationDecarator(notification);
+            INotification notificationDecarator = new NotificationDecarator(notification);
             
             foreach (var item in CheckBoxesSP.Children)
             {
@@ -50,7 +50,8 @@ namespace DecoratorTask
                     }
                 }
             }
-            MessageBox.Show(notificationDecarator.GetNotification())
+            var item1 = notificationDecarator.GetNotification();
+            MessageBox.Show(item1.ToString());
         }
     }
 }
